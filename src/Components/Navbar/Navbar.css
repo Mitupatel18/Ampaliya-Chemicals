@@ -1,0 +1,179 @@
+/* Navbar Container */
+.navbar {
+top: 0px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 4px 60px;
+background-color: #282c34;
+color: #fff;
+position: sticky;
+z-index: 10;
+}
+
+/* Logo Section */
+.navbar-logo {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.navbar-logo img {
+width: 100px;
+height: 100%;
+}
+
+/* Navbar Links */
+.navbar-links {
+list-style: none;
+display: flex;
+gap: 25px;
+margin: 0;
+padding: 0;
+
+}
+
+.navbar-links li {
+font-size: 1rem;
+font-weight: 500;
+position: relative;
+}
+
+.navbar-links a, .product-toggle {
+text-decoration: none;
+color: #fff;
+}
+
+.navbar-links a:hover, .product-toggle:hover {
+color: #1b8d22;
+cursor: pointer;
+}
+
+/* Hamburger Button for Mobile */
+.navbar-toggle {
+display: none;
+background: none;
+border: none;
+color: white;
+font-size: 2rem;
+cursor: pointer;
+}
+
+
+
+/* Product Popup */
+.product-popup {
+    position: absolute;
+    background-color: #fff;    
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .product-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .product-popup li {
+    padding: 3px 0;
+  }
+  
+  .product-popup a {
+    font-size: 0.9rem;
+    color: #282c34;
+  }
+  
+  .product-popup a:hover {
+    color: #1b8d22;
+    cursor: pointer;
+  }
+
+
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 750px) {
+    .navbar {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        flex-direction: column;
+        padding: 8px 30px;
+    }
+
+    .navbar .header{
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .navbar-logo {
+        width: 100%;
+    }
+
+    .navbar-logo img {
+        width: 90px;
+    }
+
+    .navbar-toggle {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+
+    .navbar-links {
+        margin-top: 50px;
+        flex-direction: column;
+        text-align: left;
+        color: #282c34;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        letter-spacing: 1px;
+        padding: 5px 15px;
+
+    }
+    .close {
+        display: none;
+    }
+
+    .product-popup {
+        top: -20px;
+        left: 35%;
+        transform: translateX(-50%);
+    }
+    
+    .product-popup li:active {
+        color: #1b8d22;
+    }
+}
+
+
+
+/* Media Query for Tablets */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 6px 20px;
+    }
+
+    .navbar-logo {
+        width: 100%;
+    }
+
+    .navbar-links {
+        gap: 8px;
+    }
+
+    .product-popup {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

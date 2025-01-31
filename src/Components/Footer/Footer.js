@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
             <div className="bottom-bar">
               <span className="bottom-bar-content">
-              © 2023 - Ampaliya Chemicals Pvt. Ltd. All Rights Reserved.
+              © 2023 - Ampaliya Chemicals Pvt. Ltd. All Rights Reserved. | Developed by Erdev.
               </span>
             </div>
         </div>

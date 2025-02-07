@@ -21,7 +21,7 @@ const Navbar = () => {
     
     const scrollToAbout = async() => {
 
-        await navigate("/");
+        await navigate("/home");
 
         setTimeout(() => {
             const aboutElement = document.getElementById("info");
@@ -47,7 +47,7 @@ const Navbar = () => {
 
         {/* Links List */}
         <ul className={`navbar-links ${isMenuOpen ? "open" : "close"}`}>
-            <li><a href="/">Home</a></li>
+            <li><a href="/home">Home</a></li>
             <li ><span className="product-toggle" onClick={handleProductToggle}>
                     Products
                 </span>

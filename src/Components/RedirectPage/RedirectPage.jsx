@@ -9,7 +9,7 @@ const RedirectPage = () => {
   useEffect(() => {
       const timer = setTimeout(() => {
         navigate("/home", { replace: true });
-      }, 3100); // 3 seconds delay
+      }, 2300); // 3 seconds delay
 
       return () => clearTimeout(timer);   
   }, [navigate]

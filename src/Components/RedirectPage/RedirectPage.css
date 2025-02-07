@@ -15,13 +15,13 @@
 
 .img-containor img {
     width: 50%;
-    animation: logo1 3s cubic-bezier(0.42, 0.66, 0.13, 1.28);
+    animation: logo1 2s cubic-bezier(0.42, 0.66, 0.13, 1.28);
 }
 
 
 @keyframes logo1 {
     0% { width: 100%; }
-    25% { width: 100%; }
+    1% { width: 100%; }
     100% { width: 50%; }
     
 }
@@ -29,12 +29,12 @@
 @media (max-width: 720px) {
     .img-containor img {
         width: 80%;
-        animation: logo2 2s cubic-bezier(0, 0, 0.69, 1.66);
+        animation: logo2 1.5s cubic-bezier(0, 0, 0.69, 1.66);
     }
 
     @keyframes logo2 {
         0% { width: 100%; }
-        50% { width: 100%; }
+        1% { width: 100%; }
         100% { width: 80%; }
         
     }

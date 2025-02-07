@@ -1,6 +1,5 @@
 .hero {
-    /* background: linear-gradient(to right, #f4f4f4, #e0e0e0); */
-    
+    position: relative;
     min-height: 80vh;
     width: 100%;
   }
